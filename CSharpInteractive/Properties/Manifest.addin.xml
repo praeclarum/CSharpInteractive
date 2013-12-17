@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Addin namespace="CSharpInteractive" id="CSharpInteractive" name="CSharpInteractive" author="Frank A. Krueger" copyright="2013 Frank A. Krueger" description="C# Interactive" category="IDE extensions" version="1.0">
+	<Dependencies>
+		<Addin id="::MonoDevelop.Core" version="4.0" />
+		<Addin id="::MonoDevelop.Ide" version="4.0" />
+	</Dependencies>
+	<Runtime>
+	</Runtime>
+
+	<Extension path="/MonoDevelop/Ide/Pads">
+
+		<Pad id="CSharpInteractive.CSharpInteractivePad" 
+			defaultLayout="*" 
+			defaultPlacement="Bottom" 
+			_label="C# Interactive" 
+			icon="md-cs-project" 
+			class="CSharpInteractive.CSharpInteractivePad" />
+
+	</Extension>
+
+	<Extension path="/MonoDevelop/Ide/Commands">
+
+		<Command id="CSharpInteractive.ShowCSharpInteractive"
+			_label = "C# Interactive"
+			type="check"
+			_description="Show C# Interactive pad."
+			shortcut="Control|Alt|F"
+			macShortcut="Meta|Control|F"
+			defaultHandler="CSharpInteractive.ShowCSharpInteractive" />
+
+		<Command id="CSharpInteractive.SendSelection"
+			_label = "Send selection or line to C# Interactive"
+			_description="Send the selected text or line to C# Interactive"
+			shortcut="Ctrl|Return"
+			macShortcut="Ctrl|Return"
+			defaultHandler="CSharpInteractive.SendSelection" />
+
+		<Command id="CSharpInteractive.SendType"
+			_label = "Send type to C# Interactive"
+			_description="Send the current type to C# Interactive"
+			shortcut="Ctrl|Shift|Return"
+			macShortcut="Ctrl|Shift|Return"
+			defaultHandler="CSharpInteractive.SendType" />
+
+	</Extension>
+
+	<Extension path = "/MonoDevelop/SourceEditor2/ContextMenu/Editor">
+		<CommandItem id = "CSharpInteractive.SendSelection" />
+		<CommandItem id = "CSharpInteractive.SendType" />
+	</Extension>
+
+	<Extension path = "/MonoDevelop/Ide/MainMenu/Edit">
+		<CommandItem id = "CSharpInteractive.SendSelection" />
+		<CommandItem id = "CSharpInteractive.SendType" />
+	</Extension>
+</Addin>
+
+
