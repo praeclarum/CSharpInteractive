@@ -31,6 +31,14 @@ This is useful if you want to send all the code for a class, struct, interface, 
 It also automatically executes a `using` for the namespace of the type so that you can interact with it by name.
 
 
+# Installation
+
+Open the **Add-in Manager** in Xamarin Studio. Go to the **Gallery** and choose to install **C# Interactive**.
+
+<img src="Screenshots/Add-in_Manager.png"/>
+
+
+
 # Please contribute
 
 This project is the product of a night of hacking. It works, but has lots of bugs. I'm happy to take contributions to make it more robust and feature rich.
