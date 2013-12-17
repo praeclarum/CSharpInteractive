@@ -2,7 +2,7 @@
 
 CSharpInteractive provides a Read-Eval-Print-Loop in Xamarin Studio using the [csharp][] utility that comes with mono.
 
-It does this by exposing a dockable pad that runs the csharp tool.
+It does this by exposing a dockable pad that redirects input and output from that tool. This gives you an easy way to test your ideas while you're coding.
 
 <img src="Screenshots/Matrix.png"/>
 
